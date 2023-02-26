@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="btn.css">
+</head>
+<body onload="loaded()">
+	<audio   autoplay loop preload="meta" id="my" >
+               <source src="music.mp3" type="audio/mp3"></audio>
+	<div id=loading><img src="load.gif" style="position: absolute;width: 200px;height: 200px;left:45%;top:37%;"></div>
+
+	<img class="ekk" src="g1.gif">
+
+	
+	<div id="ntn" >
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+      Scroll
+	</div>
+
+<section class="main">
+	<img src="bimg3.jpg" class="mimg" />
+	<img src="teddy1.gif" class="t1">
+	<img src="teddy2.png" class="t2">
+	<img src="teddy3.png" class="t3">
+	<img src="teddy4.gif" class="t4">
+	<img src="teddy5.gif" class="t5">
+
+	<img src="frame3.png" class="f2">
+    <img src="frame5.png" class="f1">
+
+
+
+
+</section>
+<div class="blank"></div>
+<script type="text/javascript">
+	document.body.style.height="200vh";
+					setTimeout(function(){
+              var element=document.getElementById("ntn");
+              element.classList.toggle("btn");
+
+	}, 3500);
+	var section= document.querySelector('section');
+	window.addEventListener('scroll',function(){
+		var value= window.scrollY;
+		section.style.clipPath="circle("+ value +"px at center)";
+	})
+</script>
+<script src="javascript.js"></script>
+</body>
+</html>
